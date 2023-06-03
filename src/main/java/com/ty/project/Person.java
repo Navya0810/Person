@@ -2,6 +2,7 @@ package com.ty.project;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Person {
@@ -10,6 +11,7 @@ public class Person {
 	private String name;
 	private String address;
 	private long phno;
+	@OneToOne
 	private PanCard panCard;
 	public int getId() {
 		return id;
